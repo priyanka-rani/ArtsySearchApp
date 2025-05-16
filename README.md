@@ -2,8 +2,8 @@
 
 ArtsySearchApp is a modern Android application built using **Jetpack Compose** that allows users to search for artists and explore detailed information, artworks, and categorized styles powered by the **Artsy API**.
 
-
-<img src="screenshots/artist_detail.png" alt="App Preview" width="300"/>
+### App Preview
+<img src="screenshots/search_result.png" alt="App Preview" width="300"/>
 
 ---
 

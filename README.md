@@ -23,15 +23,17 @@ ArtsySearchApp is a modern Android application built using **Jetpack Compose** t
 
 ## 🏗️ Project Structure
 
+```
 com.pri.artsysearchapp/
-├── common/        # Shared utils and constants
-├── data/          # API models and repository layer
-├── di/            # Dependency injection setup
-├── ui/            # Screens and UI components
-├── App.kt         # Root composable and theme wrapper
-├── AppNavigation.kt  # Navigation graph using Compose
-├── MainActivity.kt   # Entry point for the app
-├── Utilities.kt      # Helper composables and methods
+├── common/             # Shared utils and constants
+├── data/               # API models and repository layer
+├── di/                 # Dependency injection setup
+├── ui/                 # Screens and UI components
+├── App.kt              # Root composable and theme wrapper
+├── AppNavigation.kt    # Navigation graph using Compose
+├── MainActivity.kt     # Entry point for the app
+├── Utilities.kt        # Helper composables and methods
+```
 
 ---
 

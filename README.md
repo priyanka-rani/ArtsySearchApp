@@ -32,7 +32,6 @@ com.pri.artsysearchapp/
 ├── App.kt              # Root composable and theme wrapper
 ├── AppNavigation.kt    # Navigation graph using Compose
 ├── MainActivity.kt     # Entry point for the app
-├── Utilities.kt        # Helper composables and methods
 ```
 
 ---

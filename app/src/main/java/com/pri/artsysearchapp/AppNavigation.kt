@@ -12,7 +12,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.pri.artsysearchapp.common.SnackbarManager
+import com.pri.artsysearchapp.common.SnackBarManager
 import com.pri.artsysearchapp.ui.screens.artistdetail.ArtistDetailScreen
 import com.pri.artsysearchapp.ui.screens.home.HomeScreenWrapper
 import com.pri.artsysearchapp.ui.screens.login.LoginScreen
@@ -28,7 +28,7 @@ fun AppNavigation() {
     val scope = rememberCoroutineScope()
     // Initialize the global manager
     LaunchedEffect(Unit) {
-        SnackbarManager.init(snackbarHostState, scope)
+        SnackBarManager.init(snackbarHostState, scope)
     }
     Scaffold(
         snackbarHost = { SnackbarHost(hostState = snackbarHostState) }

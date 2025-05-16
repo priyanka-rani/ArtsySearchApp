@@ -2,7 +2,7 @@ package com.pri.artsysearchapp.ui.screens.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.pri.artsysearchapp.common.SnackbarManager
+import com.pri.artsysearchapp.common.SnackBarManager
 import com.pri.artsysearchapp.data.model.Artist
 import com.pri.artsysearchapp.data.model.ArtistDetail
 import com.pri.artsysearchapp.data.model.FavoriteArtist
@@ -136,7 +136,7 @@ class HomeViewModel @Inject constructor(
     private suspend fun removeFavorites(artistId: String) {
         _favorites.value = _favorites.value.filterNot { it.artistId == artistId }
         repository.removeFavorite(artistId)
-        SnackbarManager.showMessage("Removed from Favorites")
+        SnackBarManager.showMessage("Removed from Favorites")
     }
 
     private suspend fun addFavorites(artist: ArtistDetail?) {
@@ -152,6 +152,6 @@ class HomeViewModel @Inject constructor(
         )
         _favorites.value = _favorites.value + favoriteArtist
         repository.addFavorite(favoriteArtist)
-        SnackbarManager.showMessage("Added to Favorites")
+        SnackBarManager.showMessage("Added to Favorites")
     }
 }

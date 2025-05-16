@@ -37,7 +37,7 @@ import androidx.compose.ui.text.withLink
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.pri.artsysearchapp.common.SnackbarManager
+import com.pri.artsysearchapp.common.SnackBarManager
 import com.pri.artsysearchapp.ui.components.AppBar
 
 @SuppressLint("UnrememberedMutableState")
@@ -132,7 +132,7 @@ fun LoginScreen(
                         loading = true
                         viewModel.login(email, password, onSuccess = {
                             loading = false
-                            SnackbarManager.showMessage("Logged in successfully")
+                            SnackBarManager.showMessage("Logged in successfully")
                             onLoginSuccess()
                         }, onError = {
                             loading = false

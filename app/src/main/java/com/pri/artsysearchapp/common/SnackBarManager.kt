@@ -5,7 +5,7 @@ import androidx.compose.material3.SnackbarHostState
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
-object SnackbarManager {
+object SnackBarManager {
     private var snackbarHostState: SnackbarHostState? = null
     private var scope: CoroutineScope? = null
 
